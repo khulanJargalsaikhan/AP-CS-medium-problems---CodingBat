@@ -30,3 +30,12 @@
 	mergeTwo(["a", "c", "z"], ["b", "f", "z"], 3) → ["a", "b", "c"]
 	mergeTwo(["a", "c", "z"], ["c", "f", "z"], 3) → ["a", "c", "f"]
 	mergeTwo(["f", "g", "z"], ["c", "f", "g"], 3) → ["c", "f", "g"]
+	
+*wordsWithoutList*
+
+	Given an array of strings, return a new List (e.g. an ArrayList) where all the strings of the given length are omitted. 
+	See wordsWithout() below which is more difficult because it uses arrays.
+
+	wordsWithoutList(["a", "bb", "b", "ccc"], 1) → ["bb", "ccc"]
+	wordsWithoutList(["a", "bb", "b", "ccc"], 3) → ["a", "bb", "b"]
+	wordsWithoutList(["a", "bb", "b", "ccc"], 4) → ["a", "bb", "b", "ccc"]
