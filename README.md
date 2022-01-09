@@ -21,10 +21,11 @@
 
 *mergeTwo*
 	
-	Start with two arrays of strings, A and B, each with its elements in alphabetical order and without duplicates. 
-	Return a new array containing the first N elements from the two arrays.	The result array should be 
-	in alphabetical order and without duplicates. A and B will both have a length which is N or more. 
-	The best "linear" solution makes a single pass over A and B, taking advantage of the fact that they 
+	Start with two arrays of strings, A and B, each with its elements in alphabetical 
+	order and without duplicates. Return a new array containing the first N elements 
+	from the two arrays. The result array should be in alphabetical order and without 
+	duplicates. A and B will both have a length which is N or more. The best "linear" 
+	solution makes a single pass over A and B, taking advantage of the fact that they 
 	are in alphabetical order, copying elements directly to the new array.
 
 	mergeTwo(["a", "c", "z"], ["b", "f", "z"], 3) → ["a", "b", "c"]
@@ -42,9 +43,10 @@
 
 *scoresAverage*
 
-	Given an array of scores, compute the int average of the first half and the second half, and return whichever is larger. 
-	We'll say that the second half begins at index length/2. The array length will be at least 2. To practice decomposition, 
-	write a separate helper method int average(int[] scores, int start, int end) { 
+	Given an array of scores, compute the int average of the first half and the second half, 
+	and return whichever is larger. We'll say that the second half begins at index length/2. 
+	The array length will be at least 2. To practice decomposition, write a separate 
+	helper method int average(int[] scores, int start, int end) { 
 	which computes the average of the elements between indexes start..end. 
 	Call your helper method twice to implement scoresAverage(). Write your helper method after your 
 	scoresAverage() method in the JavaBat text area. Normally you would compute averages with doubles, 
@@ -54,3 +56,14 @@
 	scoresAverage([2, 2, 4, 4]) → 4
 	scoresAverage([4, 4, 4, 2, 2, 2]) → 4
 	scoresAverage([3, 4, 5, 1, 2, 3]) → 4
+	
+*DividesSelf*	
+	
+	We'll say that a positive int divides itself if every digit in the number divides into the number evenly. 
+	So for example 128 divides itself since 1, 2, and 8 all divide into 128 evenly. 
+	We'll say that 0 does not divide into anything evenly, so no number with a 0 digit divides itself. 
+	Note: use % to get the rightmost digit, and / to discard the rightmost digit.
+
+	dividesSelf(128) 	-> true
+	dividesSelf(12) 	-> true
+	dividesSelf(120)	-> false
